@@ -17,7 +17,7 @@ public class TimeValue {
     public static double calculateTime(int days, int hours, int minutes)
     {
         //check input values for correctness (return -1 if wrong format)
-        if (days < 0 || days >= 10000 || hours < 0 || hours >= 24 || minutes < 0 || minutes >= 60)
+        if (days < 0 || days > 10000 || hours < 0 || hours >= 24 || minutes < 0 || minutes >= 60)
             return -1;
 
         double time = 0;
